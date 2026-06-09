@@ -69,5 +69,5 @@ It’s a fundamental problem that strengthens your grasp of **divide-and-conquer
 1. Clone the repository.
 2. Compile the Java file:
    ```bash
-   javac Solution.java
+   javac SearchInRotatedSortedArray.java
 
