@@ -17,3 +17,35 @@ Return the final string `result` after processing all characters in `s`.
 **Topics:** String, Simulation  
 
 
+## Example 1
+
+**Input:** 
+s = "abc*#"
+
+
+**Process:**
+- `a` → result = "a"  
+- `b` → result = "ab"  
+- `c` → result = "abc"  
+- `*` → remove last → result = "ab"  
+- `#` → duplicate → result = "abab"  
+
+**Output:**
+"abab"
+
+
+---
+
+## Example 2
+
+**Input:**
+s = "ab%#"
+
+**Process:**
+- `a` → result = "a"  
+- `b` → result = "ab"  
+- `%` → reverse → result = "ba"  
+- `#` → duplicate → result = "baba"  
+
+**Output:**
+baba
