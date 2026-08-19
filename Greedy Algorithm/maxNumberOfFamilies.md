@@ -1,0 +1,42 @@
+# Cinema Seat Allocation
+
+## Problem
+A cinema has `n` rows of seats, each with 10 seats numbered from 1 to 10.  
+You are given a 2D integer array `reservedSeats`, where `reservedSeats[i] = [rowi, seati]` means that seat `seati` in row `rowi` is already reserved.
+
+A four-person group must be assigned to four seats in the same row. The group can be seated in one of the following seat blocks:
+- Seats 2, 3, 4, 5
+- Seats 4, 5, 6, 7
+- Seats 6, 7, 8, 9
+
+A block can be used only if none of its seats are reserved. Each seat can be assigned to at most one group.
+
+Return an integer denoting the maximum number of four-person groups that can be assigned.
+
+---
+
+## Examples
+
+**Example 1:**
+Input: n = 3, reservedSeats = [[1,2],[1,3],[1,8],[2,6],[3,1],[3,10]]
+Output: 4
+
+**Example 2:**
+Input: n = 2, reservedSeats = [[2,1],[1,8],[2,6]]
+Output: 2
+
+
+**Example 3:**
+Input: n = 4, reservedSeats = [[4,3],[1,4],[4,6],[1,7]]
+Output: 4
+
+
+---
+
+## Constraints
+- 1 <= n <= 10^9  
+- 1 <= reservedSeats.length <= min(10 * n, 10^4)  
+- reservedSeats[i] == [rowi, seati]  
+- 1 <= rowi <= n  
+- 1 <= seati <= 10  
+- All reservedSeats[i] are distinct  
